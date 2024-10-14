@@ -5,7 +5,7 @@ public class ListRemove {
 		list1.removeAll(list2);
 		
 		return list1;
-		
+		       
 	}
 
 	public static void main(String[] args) {

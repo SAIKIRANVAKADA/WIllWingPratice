@@ -13,7 +13,7 @@ public class MedalsToStudents{
 			}
 			else if(myArray.get(i)>=70 && myArray.get(i)<80) {
 				returnMap.put(i, "Bronze");
-				}
+				}   
 		}
 		return returnMap;
 		

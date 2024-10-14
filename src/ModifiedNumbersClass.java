@@ -15,7 +15,7 @@ public class ModifiedNumbersClass {
 		int finalNumber = Integer.parseInt(newString);
 		return finalNumber;
 		
-	}
+	}  
 	
 	
 	public static void main(String[] args) {
