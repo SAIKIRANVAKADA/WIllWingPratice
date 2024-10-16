@@ -33,7 +33,7 @@ public class ListOfVoters {
 	                	myArray.add(i);
 	                	 
 	                }
-	                else if(differenceInYears==18 && currentCal.get(Calendar.MONTH)<currentCal.get(Calendar.MONTH) ) {
+	                else if(differenceInYears==18 && myCal.get(Calendar.MONTH)<currentCal.get(Calendar.MONTH) ) {
 	               
 	                	myArray.add(i);
 	                	
