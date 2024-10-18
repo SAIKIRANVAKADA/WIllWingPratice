@@ -18,7 +18,7 @@ public class SumofFirstNfibonacciNumbers {
 	
 	static int sumOfFactorial(int num) {
 		int sum = 0;
-		for(int i = 0;i<=num;i++) {
+		for(int i = 0;i<=num-1;i++) {
 			
 			int fib = fibonacci(i);  
             sum += factof(fib); 
