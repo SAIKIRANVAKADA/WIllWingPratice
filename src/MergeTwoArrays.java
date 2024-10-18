@@ -6,7 +6,7 @@ public class MergeTwoArrays {
 		char[] outPutArray = new char[arrayList1.size()+ arrayList2.size()];
 		arrayList1.addAll(arrayList2);
 //		System.out.println(arrayList1);
-		
+		arrayList1.sort(null);
 		for(char i=0 ; i<arrayList1.size();i++) {
 			outPutArray[i]=arrayList1.get(i);
 		}
