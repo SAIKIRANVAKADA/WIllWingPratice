@@ -20,11 +20,10 @@ public class SumofFirstNfibonacciNumbers {
 		int sum = 0;
 		for(int i = 0;i<=num-1;i++) {
 			
-			int fib = fibonacci(i);  
-            sum += factof(fib); 
+		sum= sum+factof(fibonacci(i));
 			
 		}
-	return sum-1;
+	return sum;
 		}
 		
 		
