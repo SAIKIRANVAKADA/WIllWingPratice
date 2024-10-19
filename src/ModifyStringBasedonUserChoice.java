@@ -66,7 +66,12 @@ public class ModifyStringBasedonUserChoice {
              }
 			break;
 			
+		default :{
+			mybuffer.delete(0, mybuffer.length());
+			mybuffer.append("Please enter the String from A to B");
 			
+			
+		}
 			
 			
 			
