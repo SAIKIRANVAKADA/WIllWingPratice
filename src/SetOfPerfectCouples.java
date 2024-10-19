@@ -15,13 +15,13 @@ public class SetOfPerfectCouples {
 		
 			for(int p = 0; p<Splitted[0].length();p++) {
 				Character x= Splitted[0].charAt(p);
-				HusbandChar.add(Character.toString(x));
+				HusbandChar.add(Character.toString(x).toLowerCase());
 			}
 			HusbandChar.sort(null);
 
 			for(int w = 0; w<Splitted[1].length();w++) {
 				Character y= Splitted[1].charAt(w);
-				WifeChar.add(Character.toString(y));
+				WifeChar.add(Character.toString(y).toLowerCase());
 			}
 			WifeChar.sort(null);
 			
@@ -38,8 +38,8 @@ public class SetOfPerfectCouples {
 	
 	public static void main(String[] args) {
 		HashMap<Integer,String> myMap = new HashMap<Integer, String>();
-		myMap.put(1, "VIMAL-MALIV");
-		myMap.put(2, "KAMAL-LKAMA");
+		myMap.put(1, "VIMAL-MaLIV");
+		myMap.put(2, "KAMAL-LKAMAA");
 		myMap.put(3, "PAVAN-PAVANI");
 		myMap.put(4, "MOHAN-SPANDANA");
 		
