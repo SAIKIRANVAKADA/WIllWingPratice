@@ -58,6 +58,7 @@ public class ModifyStringBasedonUserChoice {
 		case "D":
 			
 			 for (int p = 0; p < inputString.length(); p++) {
+				  inputString=inputString.toLowerCase();
 				 if(p%2==0) {
                  mybuffer.setCharAt(p,(char) (inputString.charAt(p) - 32)); // Convert to lowercase
 				 }
