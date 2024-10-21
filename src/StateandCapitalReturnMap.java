@@ -10,7 +10,8 @@ public class StateandCapitalReturnMap {
 		
 		for(String i:StatesandCapitalscombined) {
 			String myStr= "||";
-			String[] StatesandCapitalsremoved = i.split(del1.contains(myStr)? "\\|\\|": del1);
+			// String[] StatesandCapitalsremoved = i.split(del1.contains(myStr)? "\\|\\|": del1); The following method can also be used.
+			String[] StatesandCapitalsremoved = i.split(Pattern.quote(myStr));
 				
 			returnHashMap.put(StatesandCapitalsremoved[0], StatesandCapitalsremoved[1]);
 		}
