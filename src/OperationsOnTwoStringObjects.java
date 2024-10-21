@@ -1,7 +1,5 @@
 import java.util.ArrayList;
-import java.util.regex.Pattern;
-import java.io.*; 
-import java.util.*; 
+
 
 public class OperationsOnTwoStringObjects {
 
@@ -36,11 +34,10 @@ public class OperationsOnTwoStringObjects {
 	
 	
 	static void s2MorethanS1(String string1, String string2){
-		String newstring2= string2.toLowerCase();
-		String newstring1 = string1.toLowerCase();
-		String[] splitArray = newstring1.split(Pattern.quote(newstring2 ),-1 ); //BAJBAJ ba   {"j" "j"}
+		
+		String[] splitArray = newstring1.split(newstring2,-1 ); 
 
-		StringBuffer mybuffer = new StringBuffer(string2);
+		StringBuffer mybuffer = new StringBuffer("(?i)"+string2);
 		if(splitArray.length>2) {
 			String mysubstring = string1.substring(0, string1.length()- string2.length());
 
@@ -60,9 +57,8 @@ public class OperationsOnTwoStringObjects {
 	
 	
 	static void replaceFirst(String myStr1, String myStr2) {
-		String newStr2= myStr2.toLowerCase();
-		String newStr1 = myStr1.toLowerCase();
-		String[] splitArray = newStr1.split(Pattern.quote(newStr2 ),-1);
+		
+		String[] splitArray = newStr1.split("(?i)"+newStr2,-1);
 		
 		if(splitArray.length>2) {
 		String replaceString = myStr1.replaceFirst("(?i)"+myStr2, "");
